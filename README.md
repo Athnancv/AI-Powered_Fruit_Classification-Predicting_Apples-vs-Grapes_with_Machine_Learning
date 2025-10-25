@@ -1,8 +1,3 @@
-# AI-Powered_Fruit_Classification-Predicting_Apples-vs-Grapes_with_Machine_Learning
-
-An end-to-end machine learning project that classifies apples and grapes based on their physical and visual characteristics. This project demonstrates how data preprocessing, feature extraction, and model optimization can be combined to achieve high-accuracy fruit classification — showcasing the power of machine learning in agricultural 
----
-
 # 🍎 Apple vs Grapes Classification using Machine Learning
 
 ---
