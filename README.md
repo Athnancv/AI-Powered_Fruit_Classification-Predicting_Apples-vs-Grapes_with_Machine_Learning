@@ -1,4 +1,4 @@
-🍊 **Orange vs Grapes Classification using Machine Learning**
+#🍊 **Orange vs Grapes Classification using Machine Learning**
 
 ## 📌 Project Overview
 The goal of this project is to predict whether a fruit is an **Orange or a Grape** based on a structured dataset.  
