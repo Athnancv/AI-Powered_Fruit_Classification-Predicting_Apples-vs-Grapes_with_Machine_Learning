@@ -1,96 +1,101 @@
-# 🍎 Apple vs Grapes Classification using Machine Learning
+🍊 **Orange vs Grapes Classification using Machine Learning**
+
+## 📌 Project Overview
+The goal of this project is to predict whether a fruit is an **Orange or a Grape** based on a structured dataset.  
+This notebook includes all major steps in a supervised machine learning workflow:
+- Data cleaning
+- Exploratory Data Analysis (EDA)
+- Model training
+- Hyperparameter tuning
+- Model evaluation
 
 ---
 
-## 📌 Project Overview  
-The goal of this project is to **predict whether a fruit is an Apple or a Grape** based on a structured dataset.  
-This notebook covers every major step in a **supervised learning workflow** — including **data cleaning**, **exploratory data analysis (EDA)**, **model development**, **hyperparameter tuning**, and **model evaluation**.
+## 🎯 Objectives
+- Preprocess fruit dataset for ML
+- Analyze relationships between fruit features
+- Train & compare **Decision Tree vs KNN**
+- Optimize models using **GridSearchCV**
+- Evaluate performance using classification metrics
 
 ---
 
-## 🎯 Objectives  
-- Preprocess fruit dataset for modeling  
-- Explore the structure and relationship between fruit features  
-- Train and compare **Decision Tree** vs **K-Nearest Neighbors (KNN)** classifiers  
-- Use **GridSearchCV** for hyperparameter tuning  
-- Evaluate and visualize model performance  
+## 🗂️ Dataset Features
+- **Diameter**
+- **Weight**
+- **Color Score**
+- **Label** → Orange / Grape
 
 ---
 
-## 🗂️ Dataset  
+## 🔍 Key Highlights
 
-**Features included:**  
-- Diameter  
-- Weight  
-- Color Score  
-- Label (Apple / Grape)  
+### ✅ Data Loading & Preprocessing
+- Loaded structured CSV data
+- Checked missing values & duplicates
+- Applied Label Encoding
+- Split data: **80% train / 20% test**
 
----
-
-## 🔍 Key Highlights of the Project  
-
-### ✅ Data Loading & Preprocessing  
-- Imported the dataset with structured numeric and categorical features  
-- Checked for missing values, duplicates, and inconsistencies using `.info()` and `.describe()`  
-- Applied **Label Encoding** to convert categorical fruit types into numeric form  
-- Split the data into **80% training** and **20% testing** sets using `train_test_split()`  
-
----
-
-### 📊 Exploratory Data Analysis (EDA)  
-- Visualized fruit characteristics using:  
-  - Histograms  
-  - Boxplots  
-  - Pairplots  
-- Checked for class separability and feature correlations  
-- Used statistical functions to summarize **mean**, **median**, and **variance** across fruit types  
+### 📊 Exploratory Data Analysis
+Visualizations include:
+- Histograms
+- Boxplots
+- Pairplots  
+Also:
+- Checked feature correlations
+- Calculated mean, median, variance
 
 ---
 
-### 🤖 Model Building  
-- Trained a **Decision Tree Classifier** as the baseline model  
-- Improved performance using **K-Nearest Neighbors (KNN)** — leveraging distance-based classification for better accuracy  
+## 🤖 Model Building
+- **Decision Tree Classifier** (Baseline)
+- **K-Nearest Neighbors (KNN)** — improved accuracy using distance-based metrics
 
 ---
 
-### 🔧 Hyperparameter Tuning  
-Used **GridSearchCV** to identify optimal parameters for both models:  
-- `max_depth`, `criterion` for Decision Tree  
-- `n_neighbors`, `weights` for KNN  
+## 🔧 Hyperparameter Tuning (GridSearchCV)
+**Decision Tree**
+- `max_depth`
+- `criterion`
 
-✅ Achieved better accuracy and reduced overfitting through systematic tuning  
+**KNN**
+- `n_neighbors`
+- `weights`
+
+✔️ Reduced overfitting and improved performance
 
 ---
 
-### 📈 Model Evaluation & Comparison  
-Evaluated both models using:  
-- ✅ **Accuracy Score**  
-- 📊 **Confusion Matrix**  
-- 📋 **Classification Report (Precision, Recall, F1-Score)**  
+## 📈 Model Evaluation
+Used:
+- Accuracy Score  
+- Confusion Matrix  
+- Classification Report (Precision, Recall, F1)
 
 **Result:**  
-KNN slightly outperformed the Decision Tree, showing improved classification accuracy and better generalization performance.  
+KNN slightly outperformed Decision Tree with better accuracy and generalization.
 
 ---
 
-## 🛠 Tools & Technologies Used  
-- 🐍 **Python**  
-- 🧮 **NumPy**, **Pandas** — Data handling & preprocessing  
-- 📊 **Matplotlib**, **Seaborn** — Visualization  
-- 🤖 **Scikit-learn** — ML modeling, evaluation, and tuning  
-- ⚙️ **GridSearchCV** — Hyperparameter optimization  
-- 📓 **Jupyter Notebook** — Step-by-step workflow and visualization  
+## 🛠 Tools & Technologies
+- Python 🐍
+- NumPy, Pandas — Data processing
+- Matplotlib, Seaborn — Visualization
+- Scikit-learn — Modeling & Tuning
+- GridSearchCV — Optimization
+- Jupyter Notebook — Implementation
 
 ---
 
-## 💡 Conclusion  
-This project demonstrates how even simple structured datasets can be used to build **accurate fruit classification systems**.  
-Through effective **data preprocessing**, **visualization**, and **model optimization**, the notebook showcases the power of **machine learning in agricultural and visual analytics**.  
+## 💡 Conclusion
+This project demonstrates how even simple structured data can build accurate fruit classification models.  
+With preprocessing, visualization, and tuning — ML proves useful for agricultural analytics.
 
 ---
 
-## 🔮 Future Enhancements  
-- 📈 Add **feature importance** plots for model interpretability  
-- 🧠 Implement **cross-validation** and ensemble methods like **Random Forest**  
-- 🍊 Extend the dataset to include more fruit types (multi-class prediction)  
-- 🌐 Deploy the trained model using **Streamlit** or **Flask**
+## 🔮 Future Enhancements
+- Feature importance visualization
+- Cross-validation & ensembles (Random Forest)
+- Multi-class fruit prediction
+- Deploy using Streamlit or Flask
+```
